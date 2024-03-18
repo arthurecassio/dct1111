@@ -120,14 +120,15 @@ public class Media {
         DecimalFormat casasDescimais = new DecimalFormat("#,##0.00");
         String mensagem = "Sua média foi: "+casasDescimais.format(media);
         log.info("Verificando Recuperação: "+mensagem);
-        if(media >= 5.0){
-            if(notaRecuperacao >= 4.0){
-                mensagem += " , você foi aprovado!!";
+        if(notaRecuperacao < 4.0){
+            mensagem += " , você foi reprovado pois sua nota na recuperação foi abaixo de 4.0!";
+        }else{
+            if(media >= 5.0){            
+                mensagem += " , você foi aprovado!!";           
             }else{
-                mensagem += " , você foi reprovado pois sua nota na recuperação foi abaixo de 4.0!";
+                mensagem += " , você foi reprovado pois sua média final foi abaixo de 5.0!";
             }
-        }else
-            mensagem += " , você foi reprovado pois sua média final foi abaixo de 5.0!";
+        }        
         log.info("Retornando recuperação: "+toString()+"\n"+mensagem);
         return mensagem;
     }
