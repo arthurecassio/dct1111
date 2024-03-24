@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Média</string>
+    <string name="titulo_media">Cálculo de Médias</string>
+    <string name="regulamento">Regulamento Graduação UFRN</string>
+    <string name="aprovacao">Aprovação</string>
+    <string name="recuperacao">Recuperação</string>
+    <string name="media_parcial">Média Parcial</string>
+    <string name="nota_reposicao">Nota Reposição</string>
+</resources>

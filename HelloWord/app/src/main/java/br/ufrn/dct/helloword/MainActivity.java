@@ -18,15 +18,5 @@ public class MainActivity extends AppCompatActivity {
         TextView txtHello = findViewById(R.id.txtHello);
         txtHello.setText("Olá mundo!");
 
-        EditText txtNome = findViewById(R.id.txtNome);
-        Button btnHello = findViewById(R.id.btnHello);
-
-        btnHello.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                String mensagem = "Olá "+txtNome.getText()+". Seja bem vindo!";
-                txtHello.setText(mensagem);
-            }
-        });
     }
 }
